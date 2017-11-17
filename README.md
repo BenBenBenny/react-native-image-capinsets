@@ -18,3 +18,6 @@ import ImageCapInset from 'react-native-image-capinsets';
   capInsets={{ top: 8, right: 8, bottom: 8, left: 8 }}
   />
 ```
+
+## Todo
+1. use `IamgeBackground` when the component has children
