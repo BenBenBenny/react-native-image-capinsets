@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   Image,
+  ImageBackground
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -10,8 +11,10 @@ const styles = StyleSheet.create({
 
 class ImageCapInset extends Component {
   render() {
+    const ImageComponent = this.props.children ? ImageBackground : Image
+
     return (
-      <Image
+      <ImageComponent
         {...this.props}
         resizeMode={Image.resizeMode.stretch}
       />
